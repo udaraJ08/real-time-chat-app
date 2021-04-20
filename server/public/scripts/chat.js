@@ -1,5 +1,6 @@
 const socket = io.connect("https://big-z-chat.herokuapp.com/");
 const audio = new Audio("../assets/audio/button.mp3");
+const update = new Audio("../assets/audio/update.mp3");
 
 let output = "";
 
@@ -52,11 +53,7 @@ socket.on("status", (data) => {
 
 socket.on("join", (data) => {
   output += `<h1 style="color: #fbc531;">${data}</h1>`;
-  $("#output").html(output);
-});
-
-socket.on("disconnect", (data) => {
-  output += `<h1 style="color: #eb4d4b;">someone left</h1>`;
+  update.play();
   $("#output").html(output);
 });
 

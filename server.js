@@ -27,8 +27,4 @@ io.on("connection", (socket) => {
   socket.on("join", (data) => {
     socket.broadcast.emit("join", `${data.name} joined`);
   });
-
-  socket.on("disconnect", function () {
-    io.sockets.emit("disconnect", "left");
-  });
 });

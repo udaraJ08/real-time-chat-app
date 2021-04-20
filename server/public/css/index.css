@@ -23,6 +23,7 @@ body {
   height: 100vh;
   background-color: crimson;
   position: fixed;
+  /* display: none; */
 }
 
 .nk-name-mid {
@@ -88,7 +89,14 @@ body {
   box-shadow: 1px 1px 10px black;
   width: 100%;
   height: 88%;
-  background-color: #2f3640;
+  background-image: linear-gradient(
+    to right bottom,
+    #000815,
+    #010719,
+    #05061b,
+    #0b041e,
+    #11021f
+  );
   overflow: auto;
   color: white;
   font-family: "Reem Kufi", sans-serif;
@@ -112,14 +120,14 @@ body {
   width: 80%;
   outline: none;
   background-color: transparent;
-  border: #353b48 3px solid;
+  border: #303952 3px solid;
   border-radius: 10px;
   padding-left: 20px;
   color: #2f3542;
   font-size: 20px;
 }
 
-#btn {
+/* #btn {
   padding-left: 30px;
   padding-right: 30px;
   background-color: transparent;
@@ -131,7 +139,7 @@ body {
   outline: none;
   cursor: pointer;
   transition: 0.4s;
-}
+} */
 
 #btn:hover {
   transition: 0.7s;
@@ -154,17 +162,21 @@ body {
 }
 
 @media (max-width: 500px) {
+  #nickName-container {
+    background-color: #ee5253;
+  }
+
   #brand-name {
     color: #2ed573;
     font-size: 40px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: #2f3542;
     letter-spacing: 2px;
   }
 
   .mid-container {
-    width: 100%;
+    width: 95%;
     height: 100%;
     justify-content: space-around;
   }
@@ -176,6 +188,7 @@ body {
     box-shadow: none;
     border-radius: 0;
     border: #353b48 2px solid;
+    border-radius: 20px;
   }
 
   .data-container {
@@ -184,15 +197,17 @@ body {
 
   #msg {
     border: 2px solid #353b48;
-    width: 50%;
+    width: 60%;
   }
 
-  #btn {
-    border: 2px solid #222f3e;
+  /* #btn {
+    background-color: #10ac84;
+    border: none;
+    box-shadow: 1px 1px 5px black;
     font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
-  }
+  } */
 
   #nickName {
     font-size: 30px;
