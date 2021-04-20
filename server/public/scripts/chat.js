@@ -1,4 +1,4 @@
-const socket = io.connect("http://localhost:3000/");
+const socket = io.connect("https://big-z-chat.herokuapp.com/");
 const audio = new Audio("../assets/audio/button.mp3");
 
 $("#btn").on("click", () => {
