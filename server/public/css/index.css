@@ -2,12 +2,69 @@ body {
   margin: 0;
   background-image: linear-gradient(
     to right top,
-    #ff8458,
-    #f6a857,
-    #e7c96a,
-    #d8e68e,
-    #ccffbb
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
   );
+}
+
+#nickName-container {
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: crimson;
+  position: fixed;
+}
+
+.nk-name-mid {
+  flex-direction: column;
+}
+
+#nickName {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  color: white;
+}
+
+#nickName::placeholder {
+  color: #ecf0f1;
+}
+
+#nkSubmitBtn {
+  margin-top: 20px;
+  font-size: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: #f6e58d solid 3px;
+  color: #f6e58d;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+#nkSubmitBtn:hover {
+  background-color: #f6e58d;
+  color: #2f3640;
+  transition: 0.5s;
+}
+
+#nickName:focus {
+  outline: none;
 }
 
 .main-container {
@@ -102,16 +159,22 @@ body {
   }
 
   .mid-container {
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     justify-content: space-around;
   }
 
   .msg-container {
-    height: 80%;
+    width: 100%;
+    height: 100%;
     background-color: #222f3e;
     box-shadow: none;
+    border-radius: 0;
     border: #353b48 2px solid;
+  }
+
+  .data-container {
+    padding: 20px;
   }
 
   #msg {
@@ -124,5 +187,14 @@ body {
     font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  #nickName {
+    font-size: 30px;
+  }
+
+  #nkSubmitBtn {
+    font-size: 20px;
+    border-radius: 10px;
   }
 }
