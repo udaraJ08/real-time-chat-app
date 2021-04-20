@@ -97,6 +97,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  #brand-name {
+    font-size: 30px;
+  }
+
   .mid-container {
     width: 90%;
     height: 80%;
