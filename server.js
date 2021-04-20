@@ -8,6 +8,7 @@ const server = app.listen(process.env.PORT || 3000, () => {
   console.log("Server is listening !!!");
 });
 
+const x = 0;
 const staticPath = "./server/public";
 app.use(express.static(staticPath));
 console.log(staticPath);

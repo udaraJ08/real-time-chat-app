@@ -99,7 +99,7 @@ body {
 @media (max-width: 500px) {
   .mid-container {
     width: 90%;
-    height: 100%;
+    height: 80%;
     justify-content: space-around;
   }
 
