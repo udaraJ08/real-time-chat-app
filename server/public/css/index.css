@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    to right top,
+    #ff8458,
+    #f6a857,
+    #e7c96a,
+    #d8e68e,
+    #ccffbb
+  );
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.mid-container {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.msg-container {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+  width: 100%;
+  height: 88%;
+  background-color: #2f3640;
+  overflow: auto;
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+  letter-spacing: 2px;
+}
+
+.content {
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  text-shadow: 1px 1px 5px black;
+}
+
+.data-container {
+  display: flex;
+  height: 7%;
+  justify-content: space-between;
+}
+
+#msg {
+  width: 80%;
+  outline: none;
+  background-color: transparent;
+  border: #353b48 3px solid;
+  border-radius: 10px;
+  padding-left: 20px;
+  color: #2f3542;
+  font-size: 20px;
+}
+
+#btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: transparent;
+  border: 3px solid #006266;
+  border-radius: 10px;
+  color: #006266;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#btn:hover {
+  transition: 0.7s;
+  background-color: #006266;
+  color: white;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#brand-name {
+  color: #2ed573;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #2f3542;
+}
+
+@media (max-width: 500px) {
+  .mid-container {
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .msg-container {
+    height: 80%;
+    background-color: #222f3e;
+    box-shadow: none;
+    border: #353b48 2px solid;
+  }
+
+  #msg {
+    border: 2px solid #353b48;
+    width: 70%;
+  }
+
+  #btn {
+    border: 2px solid #222f3e;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
